@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ul>li şeklinde yazılırsa hazır yapı oluşur -->
+    <ul>
+        <li>İlk Öğe</li>
+    </ul>
+    <!-- ^ işareti ile farklı komponenleri sırayla ekleyebiliriz. -->
+    <!-- Birden fazla öğe oluşturmak için * kullanırız  ul>li*4 -->
+    <!-- Class vererek oluşturmak için . ile birlikte class ismi yazarız.-->
+    <!-- ul.class1>li.class2*3 -->
+    <!-- id vererek oluşturmak için # ile birlikte id ismi yazarız.-->
+    <!-- ul#id1>li#id2*3 -->
+    <!-- Otomatik arttırmalı class yazmak için $ kullanırız ul>li#idNo$*4 -->
+    <ul>
+        <li id="idNo1"></li>
+        <li id="idNo2"></li>
+        <li id="idNo3"></li>
+        <li id="idNo4"></li>
+    </ul>
+
+    <!-- Text yazmak için etiket{yazı} şeklinde yazarız h1{Deneme} -->
+    <h1>Deneme</h1>
+
+    <!-- Lorem ekleme
+        p>lorem
+        p>lorem5 : 5 kelimeli
+        p>lorem50 : 50 kelimeli
+    -->
+
+    <!-- 
+        sadece . veya # işaretleri ile isim yazıp oluşturursak div oluşturur.
+        #div1
+        .class2
+        
+    -->
+
+    <!-- div>p#item*6>lorem10 -->
+
+    <!-- 
+        Görselleriniz hyperlink atamanız durumunda görselin tüm alanı link alanı haline dönüşecektir. 
+        Görselin herhangi bir yerine tıklanılması durumunda görsel sizi tanımlanan bağlantıya gönderecektir. 
+        <img> etiketleri için kullanılan <map> ve <area> etiketleri ile resmin içindeki koordinatlarla 
+        belirlediğimiz bir alanı sadece link haline getirebiliriz. Eklediğimiz <area> etiketi kadar 
+        belirlenen alanı bir resim üzerinden birçok bağlantıya link verebiliriz.
+    -->
+
+    <!-- Sayfa içerisinde scroll için istenilen yere name(sonbolum) parametresi verilir. a href ile #sonbolum şeklinde yazılır. -->
+
+    <!-- target özelliği
+        _self : geçerli pencerede işlem yapar.
+        _blank : yeni pencerede açar.    
+    -->
+
+    <!-- <img width="300" src="https://www.google.com.tr/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+        onload="resimYuklendi()" />
+    <picture>
+        <source
+            srcset="https://image.freepik.com/free-photo/selective-focus-shot-brown-cat-posing-camera_181624-25909.jpg"
+            media="(max-width: 600px)">
+        <source
+            srcset="https://image.freepik.com/free-photo/selective-focus-shot-gray-cat-with-angry-cat-face_181624-13282.jpg"
+            media="(max-width: 1000px)">
+        <img src="https://image.freepik.com/free-photo/white-cat-lies-woman-s-knees_8353-539.jpg" alt="Kedi" />
+    </picture> -->
+
+    <!-- inline blok elementler
+        Blok element : Bulunduğu yerin tamamını kaplar.
+        İnline element : Olduğu yer kadar alan kaplar.
+    -->
+
+</body>
+
+<script>
+    function resimYuklendi() {
+        // alert("resim yüklendi")
+        console.log('resim yüklendi');
+    }
+</script>
+
+</html>
